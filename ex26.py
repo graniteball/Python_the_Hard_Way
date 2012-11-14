@@ -52,7 +52,7 @@ print "--------------"
 print poem
 print "--------------"
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 6
 print "This should be five: %s" % five #should this be a %d or a %r?
 
 def secret_formula(started):
@@ -74,10 +74,9 @@ print "We can also do that this way:"
 print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
-sentence = "All good\tthings come to those who wait."
+sentence = "All good things come to those who wait."
 
 words = break_words(sentence)
-print "DEBUG: Words = %r" % words
 sorted_words = sort_words(words)
 
 print_first_word(words)
@@ -88,4 +87,4 @@ sorted_words = sort_sentence(sentence)
 print sorted_words
 
 print_first_and_last(sentence)
-print_first_a_last_sorted(senence)
+print_first_and_last_sorted(sentence)
