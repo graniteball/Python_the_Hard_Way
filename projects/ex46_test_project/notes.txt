@@ -1,0 +1,11 @@
+To install this package I typed:
+> sudo python setup.py install
+
+To test this package, I typed:
+> python
+>>> from ex46_test_project.ex46 import some_function_in_mysource
+>>> some_function_in_mysource()
+
+To uninstall this package I typed:
+> sudo pip uninstall ex46_test_project
+

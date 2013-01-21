@@ -1,0 +1,7 @@
+setup.py
+ex46_test_project/__init__.py
+ex46_test_project/ex46.py
+ex46_test_project.egg-info/PKG-INFO
+ex46_test_project.egg-info/SOURCES.txt
+ex46_test_project.egg-info/dependency_links.txt
+ex46_test_project.egg-info/top_level.txt

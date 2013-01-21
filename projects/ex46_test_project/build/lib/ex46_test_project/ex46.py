@@ -1,4 +1,8 @@
 # this is a comment
+
+def some_function_in_mysource():
+    return 'Yay success'
+
 print "Hello World!"
 print "Hello Again"
 print "I like typing this."
