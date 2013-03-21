@@ -27,6 +27,6 @@ def scan(input_string):
 	return(lexicon_list)
 
 direction_lexicon = ('north', 'east', 'south', 'west')
-verb_lexicon = ('go', 'kill', 'eat', 'mame')
-stop_lexicon = ('the', 'in', 'of')
-noun_lexicon = ('bear', 'princess')
+verb_lexicon = ('go', 'kill', 'eat', 'mame', 'dance')
+stop_lexicon = ('the', 'in', 'of', 'with')
+noun_lexicon = ('bear', 'princess', 'alan')

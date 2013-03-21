@@ -25,9 +25,10 @@ def test_stops():
 						
 def test_nouns():
 	assert_equal(lexicon.scan("bear"), [('noun', 'bear')])
-	result = lexicon.scan("bear princess")
+	result = lexicon.scan("bear princess Alan")
 	assert_equal(result, [('noun', 'bear'),
-						  ('noun', 'princess')])
+						  ('noun', 'princess'),
+						  ('noun', 'Alan')])
 						
 def test_numbers():
 	assert_equal(lexicon.scan("1234"), [('number',1234)])
@@ -56,6 +57,3 @@ def test_all():
 						  ('verb', 'eat'),
 						  ('stop', 'the'),
 						  ('noun', 'princess')])
-						
-	
-	
