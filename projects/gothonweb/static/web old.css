@@ -1,0 +1,90 @@
+p {
+	color: orange;
+}
+
+p {
+	font: 1em/1.5 "Times New Roman", times, serif;
+	padding: 3em, 1em;
+	border: 1px black solid;
+	border width: 1px 5px 5px 1px;
+	border-color: red green blue yellow;
+	margin 1em 5em;
+}
+a:link {
+	color: blue;
+	text-decoration: underline;
+}
+a:visited {
+	color: purple;
+}
+a:active {
+	color:red;
+}
+a:hover {
+	text-decoration: bold;
+	color: orange;
+	background-color: yellow;
+}
+body {
+	font-size: 12pt;
+	font-family: Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: normal;
+	text-transform: none;
+	letter-spacing: .01em;
+	word-spacing: .01in;
+	line-height: 1.25;
+	text-align: left;
+	text-indent: none;
+	color: teal;
+/*	background: yellow url( http://www.colinjbrowne.com/wp-content/uploads/2012/07/Jeffrey-Lebowski-also-known-as-the-dude.jpg); */
+	/* This is a CSS comment!!! */
+}
+h1 {
+	color: #ffb;
+	background-color: #009;
+}
+h2 {
+	font-size: 1.5em;
+	background-color: #ccc;
+	margin: 0.2em;
+	padding: 0.5em;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #c0e0e0;
+}
+strong {
+	font-style:italic;
+	font-size: 2em;
+	text-transofrm: uppercase;
+	color: purple;
+}
+table {
+	background-color: #f0f0f0;
+}
+img {
+	border-style: none;
+}
+li {
+	font-family: courier;
+}
+
+#top {
+	background-color: #a0c0c0;
+	padding: .5em;				
+}
+
+#top h1 {
+	color#ff0;
+}
+
+#top p {
+	color: orange;
+	font-weight: bold;
+}
+
+.intro {
+	color: green;
+	font-weight: bold;
+}

@@ -1,0 +1,106 @@
+$def with (greeting)
+
+<!DOCTYPE html PUBLIC "-//WC3/DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/htm11/DTD/htm11-strice.dtd">
+
+<html>
+	<head>
+		<title>Gothons of Planet Percal #25</title>
+<!--		<style>
+			p {
+				color: orange;
+			}
+
+			a {
+				color: green;
+			}
+		</style> -->
+		<link rel="stylesheet" type="text/css" href="web.css" />
+	</head>
+<body>
+	
+$if greeting:
+	<h1>Announcing, My First Web Page (in years)!</h1>
+	<h2>Here is the stuff from the Zed tutorial</h2>
+	<p>I just wanted to say: <br><br><em style="color: blue; font-size: 1em;">$greeting</em></p>
+	<p>And, this <em>is</em> my second line.</p>
+	<h2>Here is a simple list:</h2>
+		<ul>
+			<li>Jello</li>
+			<li>Milk</li>
+			<li>Dice</li>
+			<li>Wrappers</li>
+			<li>Bowls</li>
+		</ul>
+	<h2>Here is where to find the tutorial</h2>
+		<p><a href="http://learnpythonthehardway.org">Learn Python the Hard Way</a></p>
+	<h2>I tawt I taw a puddy tat<h2>
+		<img src="http://upload.wikimedia.org/wikipedia/en/thumb/7/79/Tweety.png/200px-Tweety.png" width="100" height="175">
+	<h2>Now we are going to play with tables</h2>
+		<table border="1">
+			<tr>
+				<td>Row 1, cell 1</td>
+				<td>Row 1, cell 2</td>
+				<td>Row 1, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2, cell 1</td>
+				<td>Row 2, cell 2</td>
+				<td>Row 2, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 3, cell 1</td>
+				<td>Row 3, cell 2</td>
+				<td>Row 3, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 4, cell 1</td>
+				<td>Row 4, cell 2</td>
+				<td>Row 4, cell 3</td>
+			</tr>
+		</table>
+	<h2>Now we are going to play with forms</h2>
+		<p><input type="text" value="Put your shit in here" /></p>
+		<p><input type="password" value="Put your password here" /></p>
+		<p><input type="checkbox" checked="checked"/> Check checkeddy check yourself</p>
+		<h3>Pick your dairy product:</h3>
+			<p>
+				<input type="radio" name="group1" value="Milk"> Milk
+				<input type="radio" name="group1" value="Butter" checked> Butter
+				<input type="radio" name="group1" value="Cheese"> Cheese
+			</p>
+		<h3>Pick your beverage:</h3>
+		<p>
+			<input type="radio" name="group2" value="Water"> Water<br>
+			<input type="radio" name="group2" value="Beer"> Beer<br>
+			<input type="radio" name="group2" value="Wine" checked> Wine
+		</p>
+	<h2>Now we are going to play with files</h2>
+		<p>Upload your shit here: <input type="file" /><p/>
+	<h2>Now we are going to submit. I said submit!</h2>
+		<p><input type="submit" value="Ooo. Look. I tawt I taw text on a button. Wow!" />
+	<h2>Now we are going to play with reset</h2>
+		<p><input type="reset" value="Reset your shit"/></p>
+	<h2>Now we are going to play with hidden fields (can't see nuthin)</h2>
+		<p><input type="hidden" value="You can't see me, ha ha"/></p>
+	<h2>Time to play with big ass text boxes</h2>
+		<p><textarea rows="8" cols="30">Put your really long shit in here</textarea></p>
+	<h2>Now we are going to play with drop-downs</h2>
+		<h3>Pick your dairy product:</h3>
+			<select>
+				<option value="milk">Milk</option>
+				<option value="butter"selected="selected">Butter</option>		
+				<option value="cheese">Cheese</option>
+			</select>
+		<h3>Pick your beverage:</h3>
+			<select>
+				<option value="water">Water</option>
+				<option value="beer"selected="selected">Beer</option>		
+				<option value="wine">Wine</option>
+			</select>	
+	<h2 style="color: red">This is a CSS styled header</h2>
+$else:
+	<em>Hello</em>, world!
+	
+</body>
+</html>

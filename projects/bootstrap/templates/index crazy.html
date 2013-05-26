@@ -1,0 +1,248 @@
+$def with (greeting)
+
+<!DOCTYPE html PUBLIC "-//WC3/DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/htm11/DTD/htm11-strice.dtd">
+
+<html>
+	<head>
+		<title>Gothons of Planet Percal #25</title>
+		<meta name="description" content = "This is my really exciting tutorial web page."/>
+		<style>
+			p {
+				color: orange;
+			}
+
+			p {
+				font: 1em/1.5 "Times New Roman", times, serif;
+				padding: 3em, 1em;
+				border: 1px black solid;
+				border width: 1px 5px 5px 1px;
+				border-color: red green blue yellow;
+				margin 1em 5em;
+			}
+			a:link {
+				color: blue;
+				text-decoration: underline;
+			}
+			a:visited {
+				color: purple;
+			}
+			a:active {
+				color:red;
+			}
+			a:hover {
+				text-decoration: bold;
+				color: orange;
+				background-color: yellow;
+			}
+			body {
+				font-size: 12pt;
+				font-family: Helvetica;
+				font-weight: normal;
+				font-style: normal;
+				text-decoration: normal;
+				text-transform: none;
+				letter-spacing: .01em;
+				word-spacing: .01in;
+				line-height: 1.25;
+				text-align: left;
+				text-indent: none;
+				color: teal;
+				background: yellow url( http://www.colinjbrowne.com/wp-content/uploads/2012/07/Jeffrey-Lebowski-also-known-as-the-dude.jpg);
+				/* This is a CSS comment!!! */
+			}
+			h1 {
+				color: #ffb;
+				background-color: #009;
+			}
+			h2 {
+				font-size: 1.5em;
+				background-color: #ccc;
+				margin: 0.2em;
+				padding: 0.5em;
+				border-style: outset;
+				border-width: 5px;
+				border-color: #c0e0e0;
+			}
+			strong {
+				font-style:italic;
+				font-size: 2em;
+				text-transofrm: uppercase;
+				color: purple;
+			}
+			table {
+				background-color: #f0f0f0;
+			}
+			img {
+				border-style: none;
+			}
+			li {
+				font-family: courier;
+			}
+			
+			#top {
+				background-color: #a0c0c0;
+				padding: .5em;				
+			}
+			
+			#top h1 {
+				color#ff0;
+			}
+			
+			#top p {
+				color: orange;
+				font-weight: bold;
+			}
+			
+			.intro {
+				color: green;
+				font-weight: bold;
+			}
+			
+		</style>
+	</head>
+<body>
+	
+$if greeting:
+	<h1>Announcing, My First Web Page (in years)!</h1>
+	<h2>Here is the stuff from the Zed tutorial</h2>
+	<p>I just wanted to say: <br><br><em style="color: blue; font-size: 1em;">$greeting</em></p>
+	<p>And, this <em>is</em> my second line.</p>
+	<h2>Here is a simple unordered list:</h2>
+		<ul>
+			<li>Jello</li>
+			<li>Milk</li>
+			<li>Dice</li>
+			<li>Wrappers</li>
+			<li>Bowls</li>
+		</ul>
+	<h2>Here is an ordered list:</h2>
+		<ol>
+			<li>First do this</li>
+			<li>Then do that</li>
+			<li>Finally, do this</li>
+		</ol>
+	<h2>Here is a definition list:</h2>
+		<dl>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+				
+				<dt>Dog</dt>
+				<dd>Any carnivorous animal belonging to the family of Canidae.</dd>
+				<dd>The domesticated sub-species of the family Canidae, Canis lupus famiailarous.</dd>
+				
+				<dt>Moo juice</dt>
+				<dt>Cat beer</dt>
+				<dt>Milk</dt>
+				<dd>A while liquid produced by cows and used for human consumption.</dd>
+		</dl>
+	<h2>Here is where to find the tutorial</h2>
+		<p><a href="http://learnpythonthehardway.org">Learn Python the Hard Way</a></p>
+	<h2>I tawt I taw a puddy tat<h2>
+		<img src="http://upload.wikimedia.org/wikipedia/en/thumb/7/79/Tweety.png/200px-Tweety.png" width="100" height="175">
+	<h2>Now we are going to play with tables</h2>
+		<table border="1">
+					<tr>
+				<td>Row 1, cell 1</td>
+				<td>Row 1, cell 2</td>
+				<td>Row 1, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2, cell 1</td>
+				<td>Row 2, cell 2</td>
+				<td>Row 2, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 3, cell 1</td>
+				<td>Row 3, cell 2</td>
+				<td>Row 3, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 4, cell 1</td>
+				<td>Row 4, cell 2</td>
+				<td>Row 4, cell 3</td>
+			</tr>
+		</table>
+	<h2>Here is a fancy-ass table</h2>
+		<table border="1">
+			<tr>
+				<th>This is Column 1</th>
+				<th>This is Column 2</th>
+				<th>This is Column 3</th>
+			</tr>	
+			<tr>
+				<td>Row 2, cell 1</td>
+				<td colspan="2">Row 1, cell 2, also spanning Row 2, cell 3</td>
+			</tr>
+			</tr>
+			<tr>
+				<td colspan = "3">Row 3, spanning all 3 columns!!!</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Row 4, cell 1, also spanning Row5, cell 1</td>
+				<td>Row 4, cell 2</td>
+				<td>Row 4, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 5, cell 2</td>
+				<td>Row 5, cell 3</td>
+			</tr>
+		</table>
+	<h2>Now we are going to play with forms</h2>
+		<p><input type="text" value="Put your shit in here" /></p>
+		<p><input type="password" value="Put your password here" /></p>
+		<p><input type="checkbox" checked="checked"/> Check checkeddy check yourself</p>
+		<h3>Pick your dairy product:</h3>
+			<p>
+				<input type="radio" name="group1" value="Milk"> Milk
+				<input type="radio" name="group1" value="Butter" checked> Butter
+				<input type="radio" name="group1" value="Cheese"> Cheese
+			</p>
+		<h3>Pick your beverage:</h3>
+		<p>
+			<input type="radio" name="group2" value="Water"> Water<br>
+			<input type="radio" name="group2" value="Beer"> Beer<br>
+			<input type="radio" name="group2" value="Wine" checked> Wine
+		</p>
+	<h2>Now we are going to play with files</h2>
+		<p>Upload your shit here: <input type="file" /><p/>
+	<h2>Now we are going to submit. I said submit!</h2>
+		<p><input type="submit" value="Ooo. Look. I tawt I taw text on a button. Wow!" />
+	<h2>Now we are going to play with reset</h2>
+		<p><input type="reset" value="Reset your shit"/></p>
+	<h2>Now we are going to play with hidden fields (can't see nuthin)</h2>
+		<p><input type="hidden" value="You can't see me, ha ha"/></p>
+	<h2>Time to play with big ass text boxes</h2>
+		<p><textarea rows="8" cols="30">Put your really long shit in here</textarea></p>
+	<h2>Now we are going to play with drop-downs</h2>
+		<h3>Pick your dairy product:</h3>
+			<select>
+				<option value="milk">Milk</option>
+				<option value="butter"selected="selected">Butter</option>		
+				<option value="cheese">Cheese</option>
+			</select>
+		<h3>Pick your beverage:</h3>
+			<select>
+				<option value="water">Water</option>
+				<option value="beer"selected="selected">Beer</option>		
+				<option value="wine">Wine</option>
+			</select>	
+	<h2 style="color: red">This is a CSS styled header</h2>
+	<strong>This is strong text!</strong>
+	
+	<h2>OK, Here we go with some Javascript</h2>
+	<a href="#top" onclick="alert ('Hello Javascript World!')">Click Me for cool Javascript!</a>
+	
+	<h2>On to more intermediate CSS</h2>
+	<div id="top">
+	<h1>Chocolate curry</h1>
+	<p>This is my recipe for making curry purely with chocolate</p>
+	<p>Mm mm mmmmmm</p>
+	</div>
+		
+$else:
+	<em>Hello</em>, world!
+	
+</body>
+</html>

@@ -1,0 +1,25 @@
+$def with (greeting)
+
+<!DOCTYPE html PUBLIC "-//WC3/DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/htm11/DTD/htm11-strice.dtd">
+
+<html>
+	<head>
+		<title>Gothons of Planet Percal #25</title>
+		<meta name="description" content = "This is my really exciting tutorial web page."/>
+		<link rel="stylesheet" type="text/css" href="./static/web.css" />
+	</head>
+<body>
+	
+$if greeting:
+	<h1>Announcing, My First Web Page (in years)!</h1>
+	<h2>Here is the stuff from the Zed tutorial</h2>
+	<p>I just wanted to say: <br><br><em style="color: blue; font-size: 1em;">$greeting</em></p>
+	<p>And, this <em>is</em> my second line.</p>
+$else:
+	<em>Hello</em>, world!
+	
+<p><a href="/hello">Back to the web form</a></p>
+
+</body>
+</html>
